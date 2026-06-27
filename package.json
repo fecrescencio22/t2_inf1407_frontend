@@ -1,0 +1,10 @@
+{
+  "name": "petit-web",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

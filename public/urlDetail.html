@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Link — Petit</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">Petit</a>
+      <ul id="nav-links"></ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Detalhes do Link</h1>
+    <p id="msg" class="msg" style="display:none"></p>
+
+    <div class="card-detalhe">
+      <div class="detalhe-row">
+        <span class="detalhe-label">Link curto</span>
+        <a id="detalhe-link" href="#" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="detalhe-row">
+        <span class="detalhe-label">Código</span>
+        <span id="detalhe-codigo"></span>
+      </div>
+      <div class="detalhe-row">
+        <span class="detalhe-label">URL original</span>
+        <span id="detalhe-original" class="quebra-texto"></span>
+      </div>
+      <div class="detalhe-row">
+        <span class="detalhe-label">Total de acessos</span>
+        <span id="detalhe-acessos" class="stat-numero"></span>
+      </div>
+      <div class="detalhe-row">
+        <span class="detalhe-label">Criado em</span>
+        <span id="detalhe-criado"></span>
+      </div>
+      <div class="detalhe-row">
+        <span class="detalhe-label">Última edição</span>
+        <span id="detalhe-atualizado"></span>
+      </div>
+    </div>
+
+    <div class="acoes-detalhe">
+      <a id="btn-editar" href="#" class="btn-primary">Editar URL</a>
+      <button id="btn-remover" class="btn-perigo">Remover Link</button>
+      <a href="/dashboard.html" class="btn-link">Voltar</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Petit — Programação para a Web em Python · PUC-Rio 2026/1</p>
+  </footer>
+
+  <script src="/javascript/constantes.js"></script>
+  <script src="/javascript/accounts/common.js"></script>
+  <script src="/javascript/cabecalho.js"></script>
+  <script src="/javascript/urlDetail.js"></script>
+</body>
+</html>

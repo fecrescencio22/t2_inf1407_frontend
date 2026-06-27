@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "rootDir": "./typescript",
+    "outDir": "./public/javascript",
+    "target": "es2019",
+    "lib": ["es2019", "dom"],
+    "strict": true,
+    "noImplicitAny": true
+  },
+  "include": ["typescript/**/*"]
+}

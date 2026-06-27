@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Petit</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">Petit</a>
+    </nav>
+  </header>
+
+  <main class="container-auth">
+    <div class="auth-card">
+      <h1>Entrar</h1>
+      <p id="msg" class="msg" style="display:none"></p>
+
+      <form id="form-login">
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Entrar</button>
+      </form>
+
+      <div class="auth-links">
+        <a href="/accounts/register.html">Criar conta</a>
+        <a href="/accounts/passwordReset.html">Esqueci minha senha</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Petit — Programação para a Web em Python · PUC-Rio 2026/1</p>
+  </footer>
+
+  <script src="/javascript/constantes.js"></script>
+  <script src="/javascript/accounts/common.js"></script>
+  <script src="/javascript/accounts/login.js"></script>
+</body>
+</html>

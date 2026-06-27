@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encurtar URL — Petit</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">Petit</a>
+      <ul id="nav-links"></ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Encurtar URL</h1>
+    <p id="msg" class="msg" style="display:none"></p>
+
+    <form id="form-create" class="form-card">
+      <div class="form-group">
+        <label for="original-url">URL original</label>
+        <input type="url" id="original-url" placeholder="https://exemplo.com/caminho/longo" required>
+      </div>
+      <div class="form-group">
+        <label for="short-code">Código personalizado <span class="opcional">(opcional)</span></label>
+        <input type="text" id="short-code" placeholder="ex: meulink" maxlength="20"
+               pattern="[A-Za-z0-9]+" title="Apenas letras e números">
+        <small>Deixe em branco para gerar automaticamente (6 caracteres).</small>
+      </div>
+      <button type="submit" class="btn-primary">Encurtar</button>
+      <a href="/dashboard.html" class="btn-link">Cancelar</a>
+    </form>
+  </main>
+
+  <footer>
+    <p>Petit — Programação para a Web em Python · PUC-Rio 2026/1</p>
+  </footer>
+
+  <script src="/javascript/constantes.js"></script>
+  <script src="/javascript/accounts/common.js"></script>
+  <script src="/javascript/cabecalho.js"></script>
+  <script src="/javascript/urlCreate.js"></script>
+</body>
+</html>

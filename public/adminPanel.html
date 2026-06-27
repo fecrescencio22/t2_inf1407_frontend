@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — Petit</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/index.html">Petit</a>
+      <ul id="nav-links"></ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Admin Panel</h1>
+      <span class="badge-admin">is_staff</span>
+    </div>
+    <p class="subtitulo">Todos os links de todos os usuários — <strong id="total">…</strong> no total.</p>
+
+    <p id="msg" class="msg" style="display:none"></p>
+
+    <div class="tabela-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Dono</th>
+            <th>URL Original</th>
+            <th>Link Curto</th>
+            <th>Acessos</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>Petit — Programação para a Web em Python · PUC-Rio 2026/1</p>
+  </footer>
+
+  <script src="/javascript/constantes.js"></script>
+  <script src="/javascript/accounts/common.js"></script>
+  <script src="/javascript/cabecalho.js"></script>
+  <script src="/javascript/adminPanel.js"></script>
+</body>
+</html>
