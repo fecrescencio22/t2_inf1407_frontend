@@ -117,13 +117,13 @@ docker run -p 8080:80 petit-web
 
 ## Capturas de tela
 
-![Tela de login do Petit](img/login-petit-t2.png)
+![Tela de login do Petit](public/img/login-petit-t2.png)
 *Tela de login — autenticação com usuário e senha via JWT*
 
-![Dashboard com lista de links do usuário](img/tela-links-petit-t2.png)
+![Dashboard com lista de links do usuário](public/img/tela-links-petit-t2.png)
 *Dashboard mostrando os links do usuário logado com contadores de acesso*
 
-![Formulário de criação de link curto](img/tela-cadastro-link-petit-t2.png)
+![Formulário de criação de link curto](public/img/tela-cadastro-link-petit-t2.png)
 *Criação de link curto com código personalizado opcional*
 
 ---
